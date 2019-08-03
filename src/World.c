@@ -14,8 +14,8 @@
 #include "StringOperation.h"
 
 #define FINAL_TEST 3
-char Input[5] = "ABCDE";
-char Output[5];
+char Input[6] = "ABCDEF";
+char Output[6];
 
 int main(void) {
 
