@@ -7,13 +7,12 @@
  Description : Hello World in C, Ansi-style
  ============================================================================
  */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "string.h"
 #include "CustomTypeDef.h"
+#include "StringOperation.h"
 
-void StringReversal(char *Src, char *Tst);
 #define FINAL_TEST 3
 char Input[5] = "ABCDE";
 char Output[5];
@@ -22,7 +21,18 @@ int main(void) {
 
 	StringReversal(&Input[0], &Output[0]);
 	puts(Output);
+
+	StringCopy(&Input[0], &Output[0]);
+	puts(Output);
+
 	return EXIT_SUCCESS;
+}
+
+
+/* Single line copy of string operation */
+void StringCopy(char *Src, char *Tst)
+{
+	while(*Tst++ = *Src++);
 }
 
 
